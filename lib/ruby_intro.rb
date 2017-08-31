@@ -3,15 +3,15 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+    arr.inject(0) { |sum, n| sum + n }
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+    sum(arr.sort.reverse[0, 2])
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+    sorted = arr.sort
 end
 
 # Part 2
